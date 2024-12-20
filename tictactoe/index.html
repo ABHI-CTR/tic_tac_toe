@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><button id="new-game">New Game</button></li>
+            <li>
+                <label for="bg-color">Background Color:</label>
+                <input type="color" id="bg-color" value="#321473">
+            </li>
+        </ul>
+        <div class="scoreboard">
+            <h3>Scoreboard</h3>
+            <p>Player X Wins: <span id="player-x-score">0</span></p>
+            <p>Player O Wins: <span id="player-o-score">0</span></p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header>
+            <h1>Welcome to Tic Tac Toe</h1>
+        </header>
+
+        <!-- Game Board -->
+        <div class="container">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- Game Status -->
+        <p id="game-status">This game is loading...</p>
+
+        <!-- Reset Button -->
+        <button id="reset">Reset Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
